@@ -17,23 +17,24 @@ int main(){
 	
 	
 	for(i=0; i<12;i++)//*
-		if (v[i] <=20)
+		if (v[i] <=20 );
+		if (v[i]>=21 || v[i]<=30);
+		if (v[i]<=31 || v[i]>=50);
 			cont = cont +1;
-			
-	for (i=0; i<12;i++)
-		if (v[i] >=21|| 30)
-			cont=cont+1;
+
 
 	
 	//calculo da porcentagem
 	porcentagem = (cont*i)/100;//*
+
 	
-	printf("\n\t vetor ",&v[12]);
+	printf("\n\t vetor ",&v[i]);
 	//saida dos valores
 	printf("\n\t Porcentagem dentro do range de 1..20: %.2f \n",porcentagem);//*
 	printf("\n\t Porcentagem dentro do range de 22..30: %.2f \n",porcentagem);
+	printf("\n\t Procentagem dentro do range de 31..50: %2f \n", porcentagem);
 		
-	
+	return 0;
 	system("pause");
 }
 
