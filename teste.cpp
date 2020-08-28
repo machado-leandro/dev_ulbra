@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 int main(){
-	//vetor de 12 posições
+	//vetor de 12 posiÃ§Ãµes
 	int v[12], i, cont,cont1,cont2,aux[12];
 	float porcentagem,porcentagem1,porcentagem2;
 	
@@ -19,9 +19,7 @@ int main(){
 	for(i=0; i<12;i++)//*
 		if (v[i] <=20 && v[i]>21 || v[i]<=30 && v[i]<=31 || v[i]>=50)
 		cont = cont + 1;
-		//if (v[i]>=21 || v[i]<=30)
-		//if (v[i]<=31 || v[i]>=50);
-			//cont = cont +1;
+
 
 
 	
