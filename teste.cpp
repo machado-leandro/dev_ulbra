@@ -3,7 +3,7 @@
 
 int main(){
 	//vetor de 12 posições
-	int v[12], i, cont,cont1,cont2,aux[12];
+	int v[12], i, cont,cont1,cont2;
 	float porcentagem,porcentagem1,porcentagem2;
 	
 	system ("color 1b");
@@ -20,9 +20,9 @@ int main(){
 		if (v[i] <=20)
 		cont = cont + 1;
 		if (v[i]>=21 || v[i]<=30)
-			cont1 = cont + 1;
-		if (v[i]<=31 || v[i]>=50)
-			cont2 = cont + 1;
+			cont1 = cont1 + 1;
+		if (v[i]>=31 || v[i]<=50)
+			cont2 = cont2 + 1;
 }
 
 
