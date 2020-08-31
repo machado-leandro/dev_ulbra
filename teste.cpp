@@ -20,21 +20,22 @@ int main(){
 		if (v[i] <=20)
 		cont = cont + 1;
 		if (v[i]>=21 || v[i]<=30)
-		if (v[i]<=31 || v[i]>=50);
-			//cont = cont +1;
+			cont = cont+1;
+		if (v[i]<=31 || v[i]>=50)
+			cont = cont +1;
 
 
 	
 	//calculo da porcentagem
-	porcentagem = (cont*i)/100;//*
-	porcentagem1 = (cont*i)/100;
-	porcentagem2 = (cont*i)/100;
+	porcentagem = (cont/i)*100;//*
+	porcentagem1 = (cont/i)*100;
+	porcentagem2 = (cont/i)*100;
 
 	
 	printf("\n\t vetor ",&v[i]);
 	//saida dos valores
 	printf("\n\t Porcentagem dentro do range de 1..20: %.2f \n",porcentagem);//*
-	printf("\n\t Porcentagem dentro do range de 22..30: %.2f \n",porcentagem1);
+	printf("\n\t Porcentagem dentro do range de 21..30: %.2f \n",porcentagem1);
 	printf("\n\t Procentagem dentro do range de 31..50: %.2f \n", porcentagem2);
 		
 	return 0;
