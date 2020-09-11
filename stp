@@ -31,7 +31,7 @@ int v[10], k[10],media,i,soma, cont;
 		if(v[i]%2==0){
 			k[i]=v[i];
 		}
-		scanf("%d", &k[i]);
+		printf("%i \n",k[i]);
 		soma = soma + k[i];
 }
 
@@ -41,6 +41,9 @@ int v[10], k[10],media,i,soma, cont;
 		if(k[i]>media)
 			cont = cont + 1;
 			
-	printf("\n a media dos valores pares eh: %d", & media);
+	printf("\n a media dos valores pares eh: %d", media);
+	
+	system("pause");
+	return 0;
 
 }
