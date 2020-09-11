@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+
+//#define tam 10
+
+int main(){
+	/* Faça um programa ler um vetor de V inteiros com 10 posições e moster o vetor
+Apos leia o vetor V, crie um segundo vetor de K de inteiros com 10 posições
+copiando somente os elementos do vetor V que sao pares
+Para calcular a media dos valores pares faça a divisoa somentoe pelo numero de valores pares
+encontrados no vetor V. zero e par
+*/
+int v[10], k[10],media,i,soma, cont;
+	
+	system("color 1f");
+	system("cls");
+	
+	printf("\n Diigite os valores de v: \n");
+	//valores de v
+	for(i=0;i<10;i++){
+		printf("\n v[%d]",i);
+		scanf("%d", &v[i]);
+	}
+	//mostra valores de v
+		for(i=0;i<10;i++)
+			printf(" %i \t",v[i]);
+			
+		//copiar os valores pares
+	for (i=0;i<10;i++){
+		if(v[i]%2==0){
+			k[i]=v[i];
+		}
+		scanf("%d", &k[i]);
+		soma = soma + k[i];
+}
+
+		media=soma/10;
+		
+	for (i=0;i<10;i++)
+		if(k[i]>media)
+			cont = cont + 1;
+			
+	printf("\n a media dos valores pares eh: %d", & media);
+
+}
