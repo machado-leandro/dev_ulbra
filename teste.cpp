@@ -11,7 +11,7 @@ int main(){
 	printf("\n Digite os valores do vetor: \n");
 	
 	for(i=0; i<12; i++){
-		printf("%i: ", i+1);
+		printf("%i: ", i);
 		scanf("%i",&v[i]);
 	}
 	
@@ -19,21 +19,24 @@ int main(){
 	for(i=0; i<12;i++){//*
 		if (v[i] <=20)
 		cont = cont + 1;
-		if (v[i]>=21 || v[i]<=30)
-			cont1 = cont1 + 1;
-		if (v[i]>=31 || v[i]<=50)
-			cont2 = cont2 + 1;
+		else if (v[i]>=21 || v[i]<=30)
+			cont1=cont1 + 1;
+		else if (v[i]>=31 || v[i]<=50)
+			cont2=cont2 + 1;
 }
-
+	
+	//mostrar vetor v
+	for(i=0;i<10;i++)
+		printf(" %d\t", v[i]);
 
 	
 	//calculo da porcentagem
-	porcentagem = (cont/i)*100;//*
-	porcentagem1 = (cont1/i)*100;
-	porcentagem2 = (cont2/i)*100;
+	porcentagem = (cont/12)*100;//*
+	porcentagem1 = (cont1/12)*100;
+	porcentagem2 = (cont2/12)*100;
 
 	
-	printf("\n\t vetor ",&v[i]);
+	
 	//saida dos valores
 	printf("\n\t Porcentagem dentro do range de 1..20: %.2f \n",porcentagem);//*
 	printf("\n\t Porcentagem dentro do range de 21..30: %.2f \n",porcentagem1);
